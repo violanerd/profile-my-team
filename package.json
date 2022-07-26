@@ -1,0 +1,28 @@
+{
+  "name": "profile-my-team",
+  "version": "1.0.0",
+  "description": "Application to create a profile of my team members",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/violanerd/profile-my-team.git"
+  },
+  "keywords": [
+    "node",
+    "jest",
+    "team",
+    "member"
+  ],
+  "author": "Madalyne Cross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/violanerd/profile-my-team/issues"
+  },
+  "homepage": "https://github.com/violanerd/profile-my-team#readme"
+}
