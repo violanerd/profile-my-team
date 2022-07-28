@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/violanerd/profile-my-team/issues"
   },
-  "homepage": "https://github.com/violanerd/profile-my-team#readme"
+  "homepage": "https://github.com/violanerd/profile-my-team#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
 }
