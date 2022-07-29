@@ -15,16 +15,16 @@ test('gets manager name', () => {
 })
 
 test('gets manager id', () => {
-    const testEmployee = new Employee('Test', 2, 'me@me.com');
-    expect(testEmployee.getId()).toEqual(expect.stringContaining('2'));
+    const manager = new Manager('Ava', 2, 'me@me.com', 104);
+    expect(manager.getId()).toEqual(expect.stringContaining('2'));
 })
 
 test('gets manager email', () => {
-    const testEmployee = new Employee('Test', 2, 'me@me.com');
-    expect(testEmployee.getEmail()).toEqual(expect.stringContaining('me@me.com'));
+    const manager = new Manager('Ava', 2, 'me@me.com', 104);
+    expect(manager.getEmail()).toEqual(expect.stringContaining('me@me.com'));
 })
 
 test('gets manager role', () => {
-    const testEmployee = new Employee('Test', 2, 'me@me.com');
-    expect(testEmployee.getRole()).toEqual(expect.stringContaining('Employee'));
+    const manager = new Manager('Ava', 2, 'me@me.com', 104);
+    expect(manager.getRole()).toEqual(expect.stringContaining('Manager'));
 })
