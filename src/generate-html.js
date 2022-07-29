@@ -1,7 +1,10 @@
 const { writeFile } = require('node:fs/promises')
 const Employee = require('../lib/Employee');
+
+// this will need logic in index to make sure the right kind of card is called... multiple cards?
 const getCard = require("./employee-card");
 
+// refactored out into index
 const testEmployee = new Employee('Test', 2, 'me@me.com');
 
 const dummydata = {
