@@ -52,7 +52,7 @@ module.exports = data => {
                     </div>
                 </main>
                 <footer class="container text-center py-3">
-                    <h3 class="text-dark">My team as of ${new Date().getFullYear()} by manager name</h3>
+                    <h3 class="text-dark">My team as of ${new Date().getFullYear()} by ${data[0].name}</h3>
                 </footer>
         </body>
         </html>
