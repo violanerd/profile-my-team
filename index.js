@@ -19,10 +19,13 @@ function getprofile(person) {
     }
     if (person === manager){
         personData.last = person.getofficeNumber();
+        personData.icon = '<i class="fa-solid fa-mug-hot"></i>';
     } else if (person === engineer){
         personData.last = person.getGithub();
+        personData.icon = '<i class="fa-solid fa-glasses"></i>';
     } else {
         personData.last = person.getSchool();
+        personData.icon = '<i class="fa-solid fa-user-graduate"></i>';
     }
     data.push(personData);
 }

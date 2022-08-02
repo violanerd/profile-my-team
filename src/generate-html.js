@@ -1,14 +1,14 @@
 
 
 function returnCard(data) {
-    const cardData = data.map(({name, id, email, title, last}) =>{
+    const cardData = data.map(({name, id, email, title, last, icon}) =>{
         return `
                         <div class="col-lg-3 m-2">
                             <div class="card">
                                 <div class="card-body bg-light shadow">
                                     <div class="card-title text-bg-primary mb-4 p-3 rounded">
                                         <h2>${name}</h2>
-                                        <h3><i class="fa-solid fa-mug-hot"></i>${title}</h3>
+                                        <h3>${icon}</i>${title}</h3>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item border rounded">${id}</li>
