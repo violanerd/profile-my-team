@@ -1,9 +1,5 @@
 
 
-
-// this will need logic in index to make sure the right kind of card is called... multiple cards?
-//const getCard = require("./employee-card");
-
 function returnCard(data) {
     const cardData = data.map(({name, id, email, title, last}) =>{
         return `
