@@ -1,11 +1,38 @@
-const { writeFile } = require('node:fs/promises')
+
 
 
 // this will need logic in index to make sure the right kind of card is called... multiple cards?
-const getCard = require("./employee-card");
+//const getCard = require("./employee-card");
+
+function returnCard(data) {
+    const cardData = data.map(({name, id, email, title, last}) =>{
+        return `
+                        <div class="col-lg-3 m-2">
+                            <div class="card">
+                                <div class="card-body bg-light shadow">
+                                    <div class="card-title text-bg-primary mb-4 p-3 rounded">
+                                        <h2>${name}</h2>
+                                        <h3><i class="fa-solid fa-mug-hot"></i>${title}</h3>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item border rounded">${id}</li>
+                                        <li class="list-group-item border rounded">${email}</li>
+                                        <li class="list-group-item border rounded">${last}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    `;
+    });
+    return cardData.join('');
+}
 
 
-function htmlData(data) {
+
+
+module.exports = data => {
+
+
     return `
             <!DOCTYPE html> 
             <html lang="en"> 
@@ -25,7 +52,7 @@ function htmlData(data) {
             
                 <main class="container my-5">
                     <div class="row justify-content-around">
-                        ${getCard(data)}
+                        ${returnCard(data)}
                     </div>
                 </main>
                 <footer class="container text-center py-3">
@@ -34,6 +61,5 @@ function htmlData(data) {
         </body>
         </html>
         `;
-}
 
-  module.exports = writeFile("./dist/index.html", htmlData());
+}
