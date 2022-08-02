@@ -27,5 +27,8 @@
   "homepage": "https://github.com/violanerd/profile-my-team#readme",
   "devDependencies": {
     "jest": "^28.1.3"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
   }
 }
