@@ -22,8 +22,12 @@
 
   Look for your completed html file in the dist folder.
 
-  To see the application demonstrated, watch the [walkthrough video](link here).
+  To see the application demonstrated, watch the [walkthrough video](https://watch.screencastify.com/v/MClkEChxXAf2cuItagpH).
   
+  Here is an example of the completed html file:
+  ![Index](./src/indexexample.png)
+
+
   ## Tests
   ~~~
   npm test
